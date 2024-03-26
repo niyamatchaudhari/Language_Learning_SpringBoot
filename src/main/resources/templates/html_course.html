@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Tutorial for Beginners</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        .header {
+            background-color: #007bff;
+            color: #fff;
+            padding: 10px 20px;
+            text-align: center;
+        }
+        #sidebar {
+            width: 250px;
+            padding: 20px;
+            background-color: #f4f4f4;
+        }
+        #main-content {
+            flex: 1;
+            padding: 20px;
+        }
+        h1 {
+            color: #333;
+        }
+        h2 {
+            background-color: #9eb8d4; /* Example background color */
+            color: #333; /* Example text color */
+            padding: 5px 10px; /* Example padding */
+            border-radius: 5px; 
+        }
+        h3 {
+            color: #007bff;
+        }
+        p {
+            font-family: Arial, sans-serif;
+            margin-bottom: 20px;
+        }
+        ul {
+            margin-bottom: 20px;
+            list-style-type: none;
+            padding-left: 0;
+        }
+        li {
+            margin-bottom: 10px;
+        }
+        a {
+            text-decoration: none;
+            color: #007bff;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        .code-box {
+            background-color: #f0f0f0;
+            padding: 10px;
+            border-radius: 5px;
+            overflow-x: auto;
+            margin-bottom: 20px;
+        }
+
+        .code-box pre {
+            margin: 0;
+        }
+
+        .code-box code {
+            color: #333;
+            font-family: 'Courier New', Courier, monospace;
+            font-size: 14px;
+        }
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+        }
+        .content {
+            flex: 1;
+            padding: 20px;
+            max-width: 50%;
+        }
+        .image {
+            flex: 1;
+            padding: 50px;
+            max-width: 60%;
+            max-height: 80px;
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+        ul 
+        {
+            list-style-type: circle; /* Change to disc, square, etc. */
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>Java Tutorial for Beginners</h1>
+    </div>
+
+    <div style="display: flex;">
+        <div id="sidebar">
+            <h2>Java Tutorial</h2>
+            <ul>
+                <li><a href="#introduction">Introduction to HTML</a></li>
+                <li><a href="#features">Features of HTML</a></li>
+                <li><a href="#HTML Basics">HTML Basics</a></li>
+                <li><a href="#HTML Styles">HTML Styles</a></li>
+                <li><a href="#HTML Text Formating">HTML Text Formating</a></li>
+                <li><a href="#datatypes">Java Data Types</a></li>
+                <li><a href="#operators">Operators In Java</a></li>
+                <!-- Add more topics as needed -->
+            </ul>
+        </div>
+
+        <div id="main-content">
+            <section id="introduction">
+                <h2>Introduction to HTML</h2>
+                <h3>What is HTML?</h3>
+                <p>HTML is abbreviated as Hyper Text Markup language</p>
+                <p>The first version of HTML was written by Tim Berners-Lee in 1993.</p>
+                <p>HTML is the standard markup language for Web pages.
+                    With HTML you can create your own Website.
+                    HTML is easy to learn - You will enjoy it!</p>
+                <h3>HTML Example</h3>
+                <p>Let's have a quick look at HTML example.</p>
+                <!-- Sample HTML Code Box -->
+                <div class="code-box">
+                  
+                        <pre>
+                            &lt;!DOCTYPE html&gt;
+                            &lt;html&gt;
+                            &lt;head&gt;
+                            &lt;title&gt;Page Title&lt;/title&gt;
+                            &lt;/head&gt;
+                            &lt;body&gt;
+                            
+                            &lt;h1&gt;This is a Heading&lt;/h1&gt;
+                            &lt;p&gt;This is a paragraph.&lt;/p&gt;
+                            
+                            &lt;/body&gt;
+                            &lt;/html&gt;
+                            </pre>
+                            
+                        
+                    </pre>
+                </div>
+                <h3>Application</h3>
+                <p>HTML projects boost our profile and ensure a bright career ahead. It is essential to know the various applications of HTML in this regard. We could list down a lot of uses of HTML, let us dive deeper into a few essential ones.</p>
+                <ol>
+                    <li>Web Pages Development</li>
+                    <li>Navigating the Internet</li>
+                    <li>Responsive Designs</li>
+                    <li>Data Entry Support</li>
+                    <li>Creation of Web Documents/li>
+                    <li>Offline Web Applications</li>
+                    <li>Enrich the Website</li>
+                    
+                </ol>
+
+               
+
+            <section id="features">
+                
+                <h2>Features of HTML</h2>
+                <p>HTML contains so many features that it took multiple RFCs (Request for Comments) to describe each one. We will go over some most common features of HTML that are useful in a `developer's life.
+                   A list of the most important features of the HTML language is given below.</p>
+                <div class="container">
+                    <div class="content">
+                        <ol>
+                            <li>Simple and user-friendly</li>
+                            <li>Semantic Structure</li>
+                            <li>SEO - Search Engine Optimisation</li>
+                            <li> Local Storage & IndexedDB - Client-Side Data Storage</li>
+                            <li>Canvas for Game Development</li>
+                            <li>Platform Independent</li>
+                            <li>Media Support</li>
+                        </ol>
+                    </div>
+                    <div class="image">
+                        <img src="https://www.techgeekbuzz.com/media/uploads/vijay/2023/06/08/features-of-html.jpg" alt="Image Description" height="700" width="560">
+                    </div>
+                </div>
+                
+                <h4>Simple & User Friendly</h4>
+                <p>Tags are annotations that can be used to write HTML. Tags structure HTML and make it easier for people and browsers to read the content efficiently. They also allow a browser to add CSS (Cascading StyleSheets) to the digital document, resulting in a stunning visual combination.</p>
+    
+                <h4>SEO - Search Engine Optimisation</h4>
+                <p>SEO is by far the most important USP (Unique Selling Point) of HTML5. With the introduction of search engines such as Google, Yahoo!, DuckDuckGo, and others, you literally have a wealth of knowledge at your fingertips</p>
+                <p>These search engines collect information from the World Wide Web by crawling the internet with computer programs (also known as web crawlers) and mapping keywords with respective documents in which they find it. These web crawlers can assimilate this data only because HTML is highly structured, and you can optimize your web pages for searchability.</p>
+
+                
+                <div class="container">
+                    <div class="content">
+                        <h4>Media Support</h4>
+                        <p>The main content pages in a SBLi scenario are HTML based and support the same rich set of multimedia technologies that can be used in any of today's fanciest web sites. Sound, video, animation and interactivity used appropriately can really help your scenario come alive.</p>
+                        </div>
+                    <div class="image">
+                        <img src="https://www.sblinteractive.org/Portals/4/images/media_support.jpg" alt="Image Description">
+                    </div>
+                </div>
+                
+                <h4>Local Storage & IndexedDB - Client-Side Data Storage</h4>
+                <p>HTML5 brings significant improvements inclient-sidestorage capabilities. LocalStorage and sessionStorage are important technologies in allowing developers to save data on the client side. These are critical developments in browser storage capabilities because cookies limit data storage size on the client side.</p>
+               
+            
+                    <p>IndexedDB extends localStorage's client-side storage capabilities. IndexedDB can store more complex and significant data in the key-value form, while localStorage might potentially store a large amount of data in a key-value form where both are strings</p>
+
+                    <h4>Canvas for Game Development</h4>
+                    <p>One of the most significant features of HTML is that you can use HTML5 to create small games, but if you want to create a good video game, you can use the element along with CSS and JavaScript.</p>
+                    <p>Canvas allows you to create 2D and 3D games. You can make these games as interactive as you'd like.</p>
+
+                    <h4> Platform Independent</h4>
+                    <p>HTML runs via a browser, which may be found on almost every device with a basic operating system. If you used mobile phones before smartphones, you'd know that even outdated Nokia phones running SymbianOSthat could open HTML pages.</p>
+                    <p>The figure tag is particularly worth mentioning because it has revolutionized browser picture rendering. Captions can also be represented using the figcaption tag along with the figure tag.</p>
+
+                    <h4>Semantic Structure</h4>
+                    <p>This is one of the most awaited features of HTML. HTML5 includes several tags for annotating certain elements for their specialized uses. For example, the article tag is used to annotate page content. The aside tag represents content that is indirectly related to the major content of the document.</p>
+                    <p>Other notable components are the header, footer, div, the paragraph tag p, and the a tag, which is most commonly used for page navigation.</p>
+                </section>
+
+                <section id="HTML Basics">
+                    <div class="container">
+                        <div class="content">
+                    <h2>Basics Of HTML</h2>
+                    <h1>HTML Documents</h1>
+                    <p>All HTML documents must start with a document type declaration: &lt;!DOCTYPE html&gt;.</p>
+                    <p>The HTML document itself begins with &lt;html&gt; and ends with &lt;/html&gt;.</p>
+                    <p>The visible part of the HTML document is between &lt;body&gt; and &lt;/body&gt;.</p>
+                    </div>
+                        <div class="image">
+                            <img src="https://cdn.educba.com/academy/wp-content/uploads/2023/07/Basic-HTML-Tags2-1.jpg.webp" alt="HTML TAGS">
+                        </div>
+                    </div>
+                    
+                    <br><br>
+                    <h2>The &lt;!DOCTYPE&gt; Declaration</h2>
+                    <p>The <code>&lt;!DOCTYPE&gt;</code> declaration represents the document type, and helps browsers to display web pages correctly.</p> 
+                    <p>It must only appear once, at the top of the page (before any HTML tags). </p>
+                    <p>The <code>&lt;!DOCTYPE&gt;</code> declaration is not case sensitive.</p>
+                    <p>The <code class="w3-codespan">&lt;!DOCTYPE&gt;</code> declaration for HTML5 is:</p>
+                    <p><h3>Example</h3> </p>
+                    <div class="code-box">
+                        <div class="example2">
+                       <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>!DOCTYPE<span class="attributecolor" style="color:red"> html</span><span class="tagcolor" style="color:mediumblue">&gt;</span></span> </div>
+                       </div>
+                       <hr>
+
+                    <h2>HTML Headings</h2>
+                    <p>HTML headings are defined with the <code>&lt;h1&gt;</code> to <code class="w3-codespan">&lt;h6&gt;</code> tags.</p>
+                    <p><code >&lt;h1&gt;</code> defines the most important heading. <code class="w3-codespan">&lt;h6&gt;</code> defines the least important 
+                        heading:&nbsp;</p>
+                        <h3>Example</h3>
+                        <div class="code=box">
+                            <div class="example2">
+                            <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>h1<span class="tagcolor" style="color:mediumblue">&gt;</span></span>This is heading 1<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/h1<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>
+                            <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>h2<span class="tagcolor" style="color:mediumblue">&gt;</span></span>This is heading 2<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/h2<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>
+                            <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>h3<span class="tagcolor" style="color:mediumblue">&gt;</span></span>This is heading 3<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/h3<span class="tagcolor" style="color:mediumblue">&gt;</span></span>
+                             </div>
+                            </div>
+                            <hr>
+                    
+                    <h2>HTML Paragraphs</h2>
+                    <p>HTML paragraphs are defined with the <code class="w3-codespan">&lt;p&gt;</code> tag:</p>
+                    <h3>Example</h3>
+                    <div class="code-box">
+                        <div class="example2">
+                        <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>p<span class="tagcolor" style="color:mediumblue">&gt;</span></span>This is a paragraph.<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/p<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>
+                        <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>p<span class="tagcolor" style="color:mediumblue">&gt;</span></span>This is another paragraph.<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/p<span class="tagcolor" style="color:mediumblue">&gt;</span></span>
+                         </div>
+                         </div>
+                           <hr> 
+                       
+                    
+                    
+                    <h2>HTML Links</h2>
+                
+                    <p>HTML links are defined with the <code>&lt;a&gt;</code> tag:</p>
+                    <h3>Example</h3>
+                    <div class="code-box">
+                        <div class="example2">
+                        <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>a<span class="attributecolor" style="color:red"> href<span class="attributevaluecolor" style="color:mediumblue">="https://www.Google.com"</span></span><span class="tagcolor" style="color:mediumblue">&gt;</span></span>This is a link<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/a<span class="tagcolor" style="color:mediumblue">&gt;</span></span>
+                         </div>
+                        </div>
+                        <hr>
+
+                     <h2>HTML Images</h2>  
+                     <p>HTML images are defined with the <code class="w3-codespan">&lt;img&gt;</code> tag.</p>
+                     <p>The source file (<code class="w3-codespan">src</code>), alternative text (<code class="w3-codespan">alt</code>), 
+                        <code>width</code>, and <code >height</code> are provided as attributes:</p>
+                        <h3>Example</h3>
+                        <div class="code-box">
+                            <div class="example2">
+                            <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>img<span class="attributecolor" style="color:red"> src<span class="attributevaluecolor" style="color:mediumblue">="apple.jpg"</span> alt<span class="attributevaluecolor" style="color:mediumblue">="apple.com"</span> width<span class="attributevaluecolor" style="color:mediumblue">="104"</span> height<span class="attributevaluecolor" style="color:mediumblue">="142"</span></span><span class="tagcolor" style="color:mediumblue">&gt;</span></span>
+                             </div>
+                            </div>
+                            <hr>
+                         </section>
+                         <section id="HTML Styles">
+                        
+                            <h2>HTML Styles</h2>
+                           <p class="intro">The HTML <code class="w3-codespan">style</code> attribute is used to add styles to an element, such as color, font, size, and more.</p>   
+                           <h3>Example</h3>
+                           <div class="code-box">
+                            <div class="example2">
+                            <p style="font-size:20px;color:red;">I am Red</p>
+                            <p style="font-size:20px;color:blue;">I am Blue</p>
+                            <p style="font-size:36px;margin:12px 0">I am Big</p>
+                            </div>
+                            </div>
+                            <hr>
+                            
+                            <h2>Background-color</h2>
+                            <p>The CSS <code class="w3-codespan">background-color</code> property defines the background color 
+                                for an HTML element.</p>
+                                <h3>Example</h3>
+                                <div class="code-box">
+                                    
+                                      <p>Set the background color for a page to powderblue:</p>
+                                    <div class="w3-code notranslate htmlHigh">
+                                     <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>body<span class="attributecolor" style="color:red"> style<span class="attributevaluecolor" style="color:mediumblue">="background-color:powderblue;"</span></span><span class="tagcolor" style="color:mediumblue">&gt;</span></span><br><br><span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>h1<span class="tagcolor" style="color:mediumblue">&gt;</span></span>This is a heading<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/h1<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br><span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>p<span class="tagcolor" style="color:mediumblue">&gt;</span></span>This is a paragraph.<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/p<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br><br><span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/body<span class="tagcolor" style="color:mediumblue">&gt;</span></span> </div>
+                                      </div>
+                                   
+                                    
+                                    <hr>
+                            
+                        </section>
+                        <section id="HTML Text Formating">
+                        
+                            <h2>HTMLText Formating</h2>
+                          
+                            <hr>
+                            
+                            
+                            <p class="intro">HTML contains several elements for defining text with a special meaning.</p>
+                                <h3>Example</h3>
+                                <div class="code-box">
+                                    
+                                    <div class="example2">
+                                        <p><b>This text is bold</b></p>
+                                        <p><i>This text is italic</i></p>
+                                        <p>This is<sub> subscript</sub> and <sup>superscript</sup></p>
+                                        </div>
+                                    </div>
+                                    <h3>HTML Formatting Elements</h3>
+                                    <p>Formatting elements were designed to display special types of text:</p>
+                                    <ul>
+                                        <li><code class="code-box">&lt;b&gt;</code> - Bold text</li>
+                                        <li><code class="code-box">&lt;strong&gt;</code> - Important text</li>
+                                        <li><code class="code-box">&lt;i&gt;</code> - Italic text</li>
+                                        <li><code class="code-box">&lt;em&gt;</code> - Emphasized text</li>
+                                        <li><code class="code-box">&lt;mark&gt;</code> - Marked text</li>
+                                        <li><code class="code-box">&lt;small&gt;</code> - Smaller text</li>
+                                        <li><code class="code-box">&lt;del&gt;</code> - Deleted text</li>
+                                        <li><code class="code-box">&lt;ins&gt;</code> - Inserted text</li>
+                                        <li><code class="code-box">&lt;sub&gt;</code> - Subscript text</li>
+                                        <li><code class="code-box">&lt;sup&gt;</code> - Superscript text</li>
+                                       </ul>
+                                    
+                                    <hr>
+                            
+                        </section>
+        
+     </div>
+        </div>
+
+    </div>
+    </body>
+    </html>

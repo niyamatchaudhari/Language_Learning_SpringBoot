@@ -1,0 +1,1679 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Java Tutorial for Beginners</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        .header {
+            background-color: #007bff;
+            color: #fff;
+            padding: 10px 20px;
+            text-align: center;
+        }
+        #sidebar {
+            width: 250px;
+            padding: 20px;
+            background-color: #f4f4f4;
+        }
+        #main-content {
+            flex: 1;
+            padding: 20px;
+        }
+        h1 {
+            color: #333;
+        }
+        h2 {
+            background-color: #9eb8d4; /* Example background color */
+            color: #333; /* Example text color */
+            padding: 5px 10px; /* Example padding */
+            border-radius: 5px; 
+        }
+        h3 {
+            color: #007bff;
+        }
+        p {
+            font-family: Arial, sans-serif;
+            margin-bottom: 20px;
+        }
+        ul {
+            margin-bottom: 20px;
+            list-style-type: none;
+            padding-left: 0;
+        }
+        li {
+            margin-bottom: 10px;
+        }
+        a {
+            text-decoration: none;
+            color: #007bff;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        .code-box {
+            background-color: #f0f0f0;
+            padding: 10px;
+            border-radius: 5px;
+            overflow-x: auto;
+            margin-bottom: 20px;
+        }
+
+        .code-box pre {
+            margin: 0;
+        }
+
+        .code-box code {
+            color: #333;
+            font-family: 'Courier New', Courier, monospace;
+            font-size: 14px;
+        }
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+        }
+        .content {
+            flex: 1;
+            padding: 20px;
+            max-width: 50%;
+        }
+        .image {
+            flex: 1;
+            padding: 50px;
+            max-width: 50%;
+            max-height: 50px;
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+        ul 
+        {
+            list-style-type: circle; /* Change to disc, square, etc. */
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>Java Tutorial for Beginners</h1>
+    </div>
+
+    <div style="display: flex;">
+        <div id="sidebar">
+            <ul>
+                <h2>Java Tutorial</h2>
+                <li><a href="#introduction">Introduction to Java</a></li>
+                <li><a href="#history">History of Java</a></li>
+                <li><a href="#features">Features of Java</a></li>
+                <li><a href="#firstprogram">First Java Program</a></li>
+                <li><a href="#jdk_jre_jvm">JDK, JRE and JVM</a></li>
+                <li><a href="#java variables">Java Variables</a></li>
+                <li><a href="#datatypes">Java Data Types</a></li>
+                <li><a href="#operators">Operators In Java</a></li>
+                <li><a href="#keywords">Keywords</a></li>
+                <h2>Control Statements</h2>
+                <li><a href="#control_statements">Java Control Statements</a></li>
+                <li><a href="#if_else">Java If-else</a></li>
+                <li><a href="#switch">Java Switch</a></li>
+                <li><a href="#forloop">Java For Loop</a></li>
+                <li><a href="#whileloop">Java While Loop</a></li>
+                <li><a href="#dowhile">Java Do While Loop</a></li>
+                <li><a href="#break">Java Break</a></li>
+                <li><a href="#continue">Java Continue</a></li>
+                <li><a href="#comments">Java Comments</a></li>
+                <h2>Java Object Class</h2>
+                <li><a href="#oops_concepts">Java OOPs Concepts</a></li>
+                <li><a href="#class_and_object">Class and Object</a></li>
+                <li><a href="#methods">Methods in java</a></li>
+                <li><a href="#constructor">Constructor</a></li>
+                <li><a href="#refer">Reference</a></li>
+                
+                
+                <!-- Add more topics as needed -->
+            </ul>
+        </div>
+
+        <div id="main-content">
+            <section id="introduction">
+                <h2>Introduction to Java</h2>
+                <h3>What is Java?</h3>
+                <p>Java is a programming language and a platform. Java is a high level, robust, object-oriented and secure programming language.</p>
+                <p>Java was developed by Sun Microsystems (which is now the subsidiary of Oracle) in the year 1995. James Gosling is known as the father of Java. Before Java, its name was Oak. Since Oak was already a registered company, so James Gosling and his team changed the name from Oak to Java.</p>
+                <p>Platform: Any hardware or software environment in which a program runs, is known as a platform. Since Java has a runtime environment (JRE) and API, it is called a platform.</p>
+                <h3>Java Example</h3>
+                <p>Let's have a quick look at Java programming example. A detailed description of Hello Java example is available in next page.(Here is a simple program which prints "Hello, World!")</p>
+                <!-- Sample Java Code Box -->
+                <div class="code-box">
+                    <pre>
+                        <code>
+                            public class HelloWorld {
+                            public static void main(String[] args) {
+                            System.out.println("Hello, World!");
+                            }
+                        }
+                        </code>
+                    </pre>
+                </div>
+                <h3>Application</h3>
+                <p>According to Sun, 3 billion devices run Java. There are many devices where Java is currently used. Some of them are as follows:</p>
+                <ol>
+                    <li>Desktop Applications such as acrobat reader, media player, antivirus, etc.</li>
+                    <li>Web Applications such as irctc.co.in, javatpoint.com, etc.</li>
+                    <li>Enterprise Applications such as banking applications.</li>
+                    <li>Mobile</li>
+                    <li>Embedded System</li>
+                    <li>Smart Card</li>
+                    <li>Robotics</li>
+                    <li>Games, etc</li>
+                </ol>
+
+                <h3>Types of Java Applications</h3>
+                <h4>There are mainly 4 types of applications that can be created using Java programming:</h4>
+                <ol>
+                    <li>Standalone Application</li>
+                    <p>Standalone applications are also known as desktop applications or window-based applications. These are traditional software that we need to install on every machine. Examples of standalone application are Media player, antivirus, etc. AWT and Swing are used in Java for creating standalone applications.</p>
+                    <li>Web Application</li>
+                    <p>An application that runs on the server side and creates a dynamic page is called a web application. Currently, Servlet, JSP, Struts, Spring, Hibernate, JSF, etc. technologies are used for creating web applications in Java.</p>
+                    <li>Enterprise Application</li>
+                    <p>An application that is distributed in nature, such as banking applications, etc. is called an enterprise application. It has advantages like high-level security, load balancing, and clustering. In Java, EJB is used for creating enterprise applications.</p>
+                    <li>Mobile Application</li>
+                    <p>An application which is created for mobile devices is called a mobile application. Currently, Android and Java ME are used for creating mobile applications.</p>
+                </ol>
+
+                <h3>Java Platforms / Editions</h3>
+                <h4>There are 4 platforms or editions of Java:</h4>
+                <ol>
+                    <li>Java SE (Java Standard Edition)</li>
+                    <p>It is a Java programming platform. It includes Java programming APIs such as java.lang, java.io, java.net, java.util, java.sql, java.math etc. It includes core topics like OOPs, String, Regex, Exception, Inner classes, Multithreading, I/O Stream, Networking, AWT, Swing, Reflection, Collection, etc.</p>
+                    <li>Java EE (Java Enterprise Edition)</li>
+                    <p>It is an enterprise platform that is mainly used to develop web and enterprise applications. It is built on top of the Java SE platform. It includes topics like Servlet, JSP, Web Services, EJB, JPA, etc.</p>
+                    <li>Java ME (Java Micro Edition)</li>
+                    <p>It is a micro platform that is dedicated to mobile applications.</p>
+                    <li>JavaFX</li>
+                    <p>It is used to develop rich internet applications. It uses a lightweight user interface API.</p>
+                </ol>
+                
+            </section>
+
+            <section id="history">
+                <h2>History of Java</h2>
+                <p>The history of Java is very interesting. Java was originally designed for interactive television, but it was too advanced technology for the digital cable television industry at the time. The history of Java starts with the Green Team. Java team members (also known as Green Team), initiated this project to develop a language for digital devices such as set-top boxes, televisions, etc. However, it was best suited for internet programming. Later, Java technology was incorporated by Netscape.</p>
+                <p>The principles for creating Java programming were "Simple, Robust, Portable, Platform-independent, Secured, High Performance, Multithreaded, Architecture Neutral, Object-Oriented, Interpreted, and Dynamic". Java was developed by James Gosling, who is known as the father of Java, in 1995. James Gosling and his team members started the project in the early '90s.</p>
+                <p>Currently, Java is used in internet programming, mobile devices, games, e-business solutions, etc. Following are given significant points that describe the history of Java.</p>
+                <div style="text-align: center; margin-top: 20px;">
+                <img src="./james_photo.jpg" alt="James Gosling" style="max-width: 150%; height: 150px; margin-bottom: 20px;">
+                <img src="./oak.jpg" alt="Oak tree" style="max-width: 150%; height: 150px;">
+                </div>
+
+                <ol>
+                    <li> James Gosling, Mike Sheridan, and Patrick Naughton initiated the Java language project in June 1991. The small team of sun engineers called Green Team.</li>
+                    <li> Initially it was designed for small, embedded systems in electronic appliances like set-top boxes.</li>
+                    <li>Firstly, it was called "Greentalk" by James Gosling, and the file extension was .gt.</li>
+                    <li>After that, it was called Oak and was developed as a part of the Green project.</li>
+                <h3>Why Java was named as "Oak"?</h3>
+                     <li>Why Oak? Oak is a symbol of strength and chosen as a national tree of many countries like the U.S.A., France, Germany, Romania, etc.</li>
+                     <li>In 1995, Oak was renamed as "Java" because it was already a trademark by Oak Technologies.</li> 
+                </ol>   
+            </section>
+
+            <section id="features">
+                
+                <h2>Features of Java</h2>
+                <p>The primary objective of Java programming language creation was to make it portable, simple and secure programming language. Apart from this, there are also some excellent features which play an important role in the popularity of this language. The features of Java are also known as Java buzzwords.
+                   A list of the most important features of the Java language is given below.</p>
+                <div class="container">
+                    <div class="content">
+                        <ol>
+                            <li>Simple</li>
+                            <li>Object-Oriented</li>
+                            <li>Portable</li>
+                            <li>Platform independent</li>
+                            <li>Secured</li>
+                            <li>Robust</li>
+                            <li>Architecture neutral</li>
+                            <li>Interpreted</li>
+                            <li>High Performance</li>
+                            <li>Multithreaded</li>
+                            <li>Distributed</li>
+                            <li>Dynamic</li>
+                        </ol>
+                    </div>
+                    <div class="image">
+                        <img src="./java-features.png" alt="Java Features">
+                    </div>
+                </div>
+                <br><br><br>
+                <h4>Simple</h4>
+                <p>Java is very easy to learn, and its syntax is simple, clean and easy to understand. According to Sun Microsystem, Java language is a simple programming language because:</p>
+                <ul>
+                    <li> Java syntax is based on C++ (so easier for programmers to learn it after C++).</li>
+                    <li> Java has removed many complicated and rarely-used features, for example, explicit pointers, operator overloading, etc.</li>
+                    <li>There is no need to remove unreferenced objects because there is an Automatic Garbage Collection in Java.</li>
+                </ul>
+
+                <h4>Object-Oriented</h4>
+                <p>Java is an object-oriented programming language. Everything in Java is an object. Object-oriented means we organize our software as a combination of different types of objects that incorporate both data and behavior.</p>
+                <p>Object-oriented programming (OOPs) is a methodology that simplifies software development and maintenance by providing some rules.</p>
+
+                
+                <div class="container">
+                    <div class="content">
+                        <h4>Platform Independent</h4>
+                        <p>Java is platform independent because it is different from other languages like C, C++, etc. which are compiled into platform specific machines while Java is a write once, run anywhere language. A platform is the hardware or software environment in which a program runs.</p>
+                        <p>There are two types of platforms software-based and hardware-based. Java provides a software-based platform.</p>
+                        <p>The Java platform differs from most other platforms in the sense that it is a software-based platform that runs on top of other hardware-based platforms. It has two components:</p>
+                        <ol>
+                            <li>Runtime Environment</li>
+                            <li>API(Application Programming Interface)</li>
+                        </ol>
+                    </div>
+                    <div class="image">
+                        <img src="./platform-independent-java.png" alt="Image Description">
+                    </div>
+                </div>
+                <p>Java code can be executed on multiple platforms, for example, Windows, Linux, Sun Solaris, Mac/OS, etc. Java code is compiled by the compiler and converted into bytecode. This bytecode is a platform-independent code because it can be run on multiple platforms, i.e., Write Once and Run Anywhere (WORA).</p>
+
+                <h4>Secured</h4>
+                <p>Java is best known for its security. With Java, we can develop virus-free systems. Java is secured because:</p>
+                <ol>
+                    <li>No explicit pointer</li>
+                    <li> Java Programs run inside a virtual machine sandbox</li>
+                
+                <div style="text-align: center; margin-top: 20px;">
+                    <img src="./java-security.png" alt="James Gosling" style="max-width: 200%; height: 200px; margin-bottom: 20px;">
+                </div>
+                    <li>Classloader</li>
+                    <p>Classloader in Java is a part of the Java Runtime Environment (JRE) which is used to load Java classes into the Java Virtual Machine dynamically. It adds security by separating the package for the classes of the local file system from those that are imported from network sources.</p>
+                    <li>Bytecode Verifier</li>
+                    <p>It checks the code fragments for illegal code that can violate access rights to objects.</p>
+                    <li>Security Manager</li>
+                    <p>It determines what resources a class can access such as reading and writing to the local disk.</p>
+                    </ol>
+
+                    <p>Java language provides these securities by default. Some security can also be provided by an application developer explicitly through SSL, JAAS, Cryptography, etc.</p>
+
+                    <h4>Robust</h4>
+                    <p>Java provides automatic garbage collection which runs on the Java Virtual Machine to get rid of objects which are not being used by a Java application anymore.</p>
+                    <p>There are exception handling and the type checking mechanism in Java. All these points make Java robust.</p>
+
+                    <h4>Architecture-neutral</h4>
+                    <p>Java is architecture neutral because there are no implementation dependent features, for example, the size of primitive types is fixed.</p>
+                    <p>In C programming, int data type occupies 2 bytes of memory for 32-bit architecture and 4 bytes of memory for 64-bit architecture. However, it occupies 4 bytes of memory for both 32 and 64-bit architectures in Java.</p>
+
+                    <h4>Portable</h4>
+                    <p>Java is portable because it facilitates you to carry the Java bytecode to any platform. It doesn't require any implementation.</p>
+
+                    <h4>High-performance</h4>
+                    <p>Java is faster than other traditional interpreted programming languages because Java bytecode is "close" to native code. It is still a little bit slower than a compiled language (e.g., C++). Java is an interpreted language that is why it is slower than compiled languages, e.g., C, C++, etc.</p>
+
+                    <h4>Distributed</h4>
+                    <p>Java is distributed because it facilitates users to create distributed applications in Java. RMI and EJB are used for creating distributed applications. This feature of Java makes us able to access files by calling the methods from any machine on the internet.</p>
+                    
+                    <h4>Multi-threaded</h4>
+                    <p>A thread is like a separate program, executing concurrently. We can write Java programs that deal with many tasks at once by defining multiple threads. The main advantage of multi-threading is that it doesn't occupy memory for each thread. It shares a common memory area. Threads are important for multi-media, Web applications, etc. Java supports dynamic compilation and automatic memory management (garbage collection).</p>
+                    
+                    <h4>Dynamic</h4>
+                    <p>Java is a dynamic language. It supports the dynamic loading of classes. It means classes are loaded on demand. It also supports functions from its native languages, i.e., C and C++.</p>
+                    
+            </section>
+
+            <section id="firstprogram">
+                <h2>First Java Program</h2>
+                <h3>First Java Program | Hello World Example</h3>
+                <p>In this section, we will learn how to write the simple program of Java. We can write a simple hello Java program easily after installing the JDK. To create a simple Java program, you need to create a class that contains the main method. Let's understand the requirement first.</p>
+                <h4>The requirement for Java Hello World Example</h4>
+                <p>For executing any Java program, the following software or application must be properly installed.</p>
+                <ul>
+                    <li>Install the JDK if you don't have installed it, download the JDK and install it.</li>
+                    <li>Set path of the jdk/bin directory. http://www.javatpoint.com/how-to-set-path-in-java</li>
+                    <li>Create the Java program</li>
+                    <li>Compile and run the Java program</li>
+                </ul>
+
+                <h3>Creating Hello World Example</h3>
+                <h4>Let's create the hello java program:</h4>
+                <div class="code-box">
+                    <pre>
+                        <code>
+                            class Simple{  
+                                public static void main(String args[]){  
+                                 System.out.println("Hello Java");  
+                                }  
+                            }  
+                        </code>
+                    </pre>
+                </div>
+
+                <p>Save the above file as Simple.java.</p>
+                <h4>To compile:</h4>
+                <p>javac Simple.java</p>
+                <h4>To execute:</h4>
+                <p>java Simple</p>
+
+                <h4>Output:</h4>
+                <div class="code-box">
+                    <pre>
+                        <code>
+                           Hello Java
+                        </code>
+                    </pre>
+                </div>
+
+                <h4>Compilation Flow:</h4>
+                <p>When we compile Java program using javac tool, the Java compiler converts the source code into byte code.</p>
+                <div style="text-align: center; margin-top: 20px;">
+                    <img src="./javacodecompile.png" alt="James Gosling" style="max-width: 200%; height: 200px; margin-bottom: 20px;">
+                </div>
+
+                <h3>Parameters used in First Java Program</h3>
+                <p>Let's see what is the meaning of class, public, static, void, main, String[], System.out.println().</p>
+                <ul>
+                    <li><b>class</b> keyword is used to declare a class in Java.</li>
+                    <li><b>public</b> keyword is an access modifier that represents visibility. It means it is visible to all.</li>
+                    <li><b>static</b> is a keyword. If we declare any method as static, it is known as the static method. The core advantage of the static method is that there is no need to create an object to invoke the static method. The main() method is executed by the JVM, so it doesn't require creating an object to invoke the main() method. So, it saves memory.</li>
+                    <li><b>void</b>  is the return type of the method. It means it doesn't return any value.</li>
+                    <li><b>main</b>represents the starting point of the program.</li>
+                    <li><b>String[] args or String args[]</b>is used for command line argument. We will discuss it in coming section.</li>
+                    <li><b>System.out.println()</b>is used to print statement. Here, System is a class, out is an object of the PrintStream class, println() is a method of the PrintStream class. We will discuss the internal working of System.out.println() statement in the coming section.</li>
+
+                </ul>
+            </section>
+
+
+            <section id="jdk_jre_jvm">
+                <h2>JDK, JRE and JVM</h2>
+                <h3>Difference between JDK, JRE, and JVM</h3>
+                <p>We must understand the differences between JDK, JRE, and JVM before proceeding further to Java. See the brief overview of JVM here.</p>
+                <p>If you want to get the detailed knowledge of Java Virtual Machine, move to the next page. Firstly, let's see the differences between the JDK, JRE, and JVM.</p>
+                <h3>JVM</h3>
+                <p>JVM (Java Virtual Machine) is an abstract machine. It is called a virtual machine because it doesn't physically exist. It is a specification that provides a runtime environment in which Java bytecode can be executed. It can also run those programs which are written in other languages and compiled to Java bytecode.</p>
+                <p>JVMs are available for many hardware and software platforms. JVM, JRE, and JDK are platform dependent because the configuration of each OS is different from each other. However, Java is platform independent. There are three notions of the JVM: specification, implementation, and instance.</p>
+                <h4>The JVM performs the following main tasks:</h4>
+                <ul>
+                    <li>Loads code</li>
+                    <li>Verifies code</li>
+                    <li>Executes code</li>
+                    <li>Provides runtime environment</li>
+                </ul>
+
+                <h3>JRE</h3>
+                <p>JRE is an acronym for Java Runtime Environment. It is also written as Java RTE. The Java Runtime Environment is a set of software tools which are used for developing Java applications. It is used to provide the runtime environment. It is the implementation of JVM. It physically exists. It contains a set of libraries + other files that JVM uses at runtime.</p>
+                <p>The implementation of JVM is also actively released by other companies besides Sun Micro Systems.</p>
+                <div style="text-align: center; margin-top: 20px;">
+                    <img src="./jre.png" alt="James Gosling" style="max-width: 200%; height: 200px; margin-bottom: 20px;">
+                </div>
+
+                <h3>JDK</h3>
+                <p>JDK is an acronym for Java Development Kit. The Java Development Kit (JDK) is a software development environment which is used to develop Java applications and applets. It physically exists. It contains JRE + development tools.</p>
+                <p>JDK is an implementation of any one of the below given Java Platforms released by Oracle Corporation:</p>
+                <ul>
+                    <li>Standard Edition Java Platform</li>
+                    <li>Enterprise Edition Java Platform</li>
+                    <li>Micro Edition Java Platform</li>
+                </ul>
+                <p>The JDK contains a private Java Virtual Machine (JVM) and a few other resources such as an interpreter/loader (java), a compiler (javac), an archiver (jar), a documentation generator (Javadoc), etc. to complete the development of a Java Application.</p>
+                <div style="text-align: center; margin-top: 20px;">
+                    <img src="./jdk.png" alt="James Gosling" style="max-width: 200%; height: 200px; margin-bottom: 20px;">
+                </div>
+            </section>
+
+
+            <section id="java variable">
+                <h2>Java Variables</h2>
+                <h3>Java Variables</h3>
+                <p>A variable is a container which holds the value while the Java program is executed. A variable is assigned with a data type.</p>
+                <p>Variable is a name of memory location. There are three types of variables in java: local, instance and static.</p>
+                <p>There are two types of data types in Java:</p>
+                <ol>
+                    <li>Primitive</li>
+                    <li>non-Primitive</li>
+                </ol>
+                <h3>Variable</h3>
+                <p>A variable is the name of a reserved area allocated in memory. In other words, it is a name of the memory location. It is a combination of "vary + able" which means its value can be changed.</p>
+                <div class="code-box">
+                    <pre>
+                        <code>
+                            int data=50;//Here data is variable  
+                        </code>
+                    </pre>
+                </div>
+
+                <h3>Types of Variables</h3>
+                <h4>There are three types of variables in Java:</h4>
+                <ul>
+                    <li>local variable</li>
+                    <li>instance variable</li>
+                    <li>static variable</li>
+                </ul>
+                <div style="text-align: center; margin-top: 20px;">
+                    <img src="./types-of-variables.png" alt="James Gosling" style="max-width: 200%; height: 200px; margin-bottom: 20px;">
+                </div>
+
+                <ol>
+                    <li>Local Variable</li>
+                    <p>A variable declared inside the body of the method is called local variable. You can use this variable only within that method and the other methods in the class aren't even aware that the variable exists.</p>
+                    <p>A local variable cannot be defined with "static" keyword.</p>
+                    <li>Instance Variable</li>
+                    <p>A variable declared inside the class but outside the body of the method, is called an instance variable. It is not declared as static.</p>
+                    <p>It is called an instance variable because its value is instance-specific and is not shared among instances.</p>
+                    <li>Static variable</li>
+                    <p>A variable that is declared as static is called a static variable. It cannot be local. You can create a single copy of the static variable and share it among all the instances of the class. Memory allocation for static variables happens only once when the class is loaded in the memory.</p>
+
+                    <h4>Example to understand the types of variables in java</h4>
+                    <div class="code-box">
+                        <pre>
+                            <code>
+                                public class A  
+                                {  
+                                    static int m=100;//static variable 
+                                    void method()  
+                                    {   
+                                        int n=90;//local variable    
+                                    }  
+                                    public static void main(String args[])  
+                                    {  
+                                        int data=50;//instance variable    
+                                    }  
+                                }//end of class     
+                            </code>
+                        </pre>
+                    </div>
+                </ol>
+            </section>
+
+            <section id="datatypes">
+                <h2>Java Data Types</h2>
+                <h3>Data Types in Java</h3>
+                <p>Data types specify the different sizes and values that can be stored in the variable. There are two types of data types in Java:</p>
+                <ol>
+                    <li>Primitive data types:<p>The primitive data types include boolean, char, byte, short, int, long, float and double.</p></li>
+                    <li>Non-primitive data types:<p>The non-primitive data types include Classes, Interfaces, and Arrays.</p></li>
+                </ol>
+
+                <h3>Java Primitive Data Types</h3>
+                <p>In Java language, primitive data types are the building blocks of data manipulation. These are the most basic data types available in Java language.</p>
+                
+                <div class="container">
+                    <div class="content">
+                        <h4>There are 8 types of primitive data types:</h4>
+                        <ol>
+                            <li>boolean data type</li>
+                            <li>byte data type</li>
+                            <li>char data type</li>
+                            <li>short data type</li>
+                            <li>int data type</li>
+                            <li>long data type</li>
+                            <li>float data type</li>
+                            <li>double data type</li>
+                        </ol>
+                    </div>
+                    <div class="image">
+                        <img src="./java-data-types.png" alt="Image Description">
+                    </div>
+                </div>
+
+                <h4>Boolean Data Type</h4>
+                <div class="code-box">
+                    <pre>
+                        <code>
+                            Boolean one = false, Boolean two = true   
+                        </code>
+                    </pre>
+                </div>
+
+                <h4>Byte Data Type</h4>
+                <div class="code-box">
+                    <pre>
+                        <code>
+                            byte a = 10, byte b = -20      
+                        </code>
+                    </pre>
+                </div>
+
+                <h4>Short Data Type</h4>
+                <div class="code-box">
+                    <pre>
+                        <code>
+                            short s = 10000, short r = -5000       
+                        </code>
+                    </pre>
+                </div>
+
+                <h4>Int Data Type</h4>
+                <div class="code-box">
+                    <pre>
+                        <code>
+                            int a = 100000, int b = -200000       
+                        </code>
+                    </pre>
+                </div>
+
+                <h4>Long Data Type</h4>
+                <div class="code-box">
+                    <pre>
+                        <code>
+                            long a = 100000L, long b = -200000L       
+                        </code>
+                    </pre>
+                </div>
+
+                <h4>Float Data Type</h4>
+                <div class="code-box">
+                    <pre>
+                        <code>
+                            float f1 = 234.5f         
+                        </code>
+                    </pre>
+                </div>
+
+                <h4>Char Data Type</h4>
+                <div class="code-box">
+                    <pre>
+                        <code>
+                            char letterA = 'A'          
+                        </code>
+                    </pre>
+                </div>
+            
+            </section>
+
+            <section id="operators">
+                <h2>Operators In Java</h2>
+                <h3>Operators in Java</h3>
+                <p>Operator in Java is a symbol that is used to perform operations. For example: +, -, *, / etc.</p>
+                <p>There are many types of operators in Java which are given below:</p>
+                <ul>
+                    <li>Unary Operator,</li>
+                    <li>Arithmetic Operator,</li>
+                    <li>Shift Operator,</li>
+                    <li>Relational Operator,</li>
+                    <li>Bitwise Operator,</li>
+                    <li>Logical Operator,</li>
+                    <li>Ternary Operator and</li>
+                    <li>Assignment Operator.</li>
+                </ul>
+                <h3>Java Operator Precedence</h3>
+                <div style="text-align: center; margin-top: 20px;">
+                    <img src="./operator_precedence.jpeg" alt="James Gosling" style="max-width: 200%; height: 200px; margin-bottom: 20px;">
+                </div>
+            </section>
+
+
+            <section id="keywords">
+                <h2>Keywords</h2>
+                <h3>Java Keywords</h3>
+                <p>Java keywords are also known as reserved words. Keywords are particular words that act as a key to a code. These are predefined words by Java so they cannot be used as a variable or object name or class name.</p>
+                <h3>List of Java Keywords</h3>
+                <h4>A list of Java keywords or reserved words are given below:</h4>
+                <ol>
+                    <li><b>abstract:</b>Java abstract keyword is used to declare an abstract class. An abstract class can provide the implementation of the interface. It can have abstract and non-abstract methods.</li>
+                    <li><b>abstract:</b>Java abstract keyword is used to declare an abstract class. An abstract class can provide the implementation of the interface. It can have abstract and non-abstract methods.</li>
+                    <li><b>boolean:</b>Java boolean keyword is used to declare a variable as a boolean type. It can hold True and False values only.</li>
+                    <li><b>break:</b>Java break keyword is used to break the loop or switch statement. It breaks the current flow of the program at specified conditions.</li>
+                    <li><b>byte:</b>Java byte keyword is used to declare a variable that can hold 8-bit data values.</li>
+                    <li><b>case:</b>Java case keyword is used with the switch statements to mark blocks of text.</li>
+                    <li><b>catch:</b>Java catch keyword is used to catch the exceptions generated by try statements. It must be used after the try block only.</li>
+                    <li><b>char:</b>Java char keyword is used to declare a variable that can hold unsigned 16-bit Unicode characters</li>
+                    <li><b>class: </b> Java class keyword is used to declare a class.</li>
+                    <li><b>continue:</b>Java continue keyword is used to continue the loop. It continues the current flow of the program and skips the remaining code at the specified condition.</li>
+                    <li><b>default:</b>Java default keyword is used to specify the default block of code in a switch statement.</li>
+                    <li><b>do:</b>Java do keyword is used in the control statement to declare a loop. It can iterate a part of the program several times.</li>
+                    <li><b>double:</b>Java double keyword is used to declare a variable that can hold 64-bit floating-point number.</li>
+                    <li><b>else:</b>Java else keyword is used to indicate the alternative branches in an if statement.</li>
+                    <li><b>enum:</b>Java enum keyword is used to define a fixed set of constants. Enum constructors are always private or default.</li>
+                    <li><b>extends:</b>Java extends keyword is used to indicate that a class is derived from another class or interface.</li>
+                    <li><b>final:</b>Java final keyword is used to indicate that a variable holds a constant value. It is used with a variable. It is used to restrict the user from updating the value of the variable.</li>
+                    <li><b>finally:</b>Java finally keyword indicates a block of code in a try-catch structure. This block is always executed whether an exception is handled or not.</li>
+                    <li><b>float:</b>Java float keyword is used to declare a variable that can hold a 32-bit floating-point number.</li>
+                    <li><b>for:</b>Java for keyword is used to start a for loop. It is used to execute a set of instructions/functions repeatedly when some condition becomes true. If the number of iteration is fixed, it is recommended to use for loop.</li>
+                    <li><b>if:</b>Java if keyword tests the condition. It executes the if block if the condition is true.</li>
+                    <li><b>implements:</b>Java implements keyword is used to implement an interface.</li>
+                    <li><b>import:</b>Java import keyword makes classes and interfaces available and accessible to the current source code.</li>
+                    <li><b>instanceof:</b>Java instanceof keyword is used to test whether the object is an instance of the specified class or implements an interface.</li>
+                    <li><b>int:</b> Java int keyword is used to declare a variable that can hold a 32-bit signed integer.</li>
+                    <li><b>interface: </b> Java interface keyword is used to declare an interface. It can have only abstract methods.</li>
+                    
+                </ol>
+            </section>
+
+            <section id="control_statements">
+                <h2>Java Control Statements</h2>
+                <h3>Java Control Statements | Control Flow in Java</h3>
+                <p>Java compiler executes the code from top to bottom. The statements in the code are executed according to the order in which they appear. However, Java provides statements that can be used to control the flow of Java code. Such statements are called control flow statements. It is one of the fundamental features of Java, which provides a smooth flow of program.</p>
+                <h4>Java provides three types of control flow statements.</h4>
+                <ol>
+                    <li>Decision Making statements</li>
+                    <ul>
+                        <li>if statements</li>
+                        <li>switch statement</li>
+                    </ul>
+                    <li>Loop statements</li>
+                    <ul>
+                        <li>do while loop</li>
+                        <li>while loop</li>
+                        <li>for loop</li>
+                        <li>for-each loop</li>
+                    </ul>
+                    <li>Jump statements</li>
+                    <ul>
+                        <li>break statement</li>
+                        <li>continue statement</li>
+                    </ul>
+
+                </ol>
+            </section>
+
+            <section id="if_else">
+                <h2>Java If-else</h2>
+                <h3>Java If-else Statement</h3>
+                <p>The Java if statement is used to test the condition. It checks boolean condition: true or false. There are various types of if statement in Java.</p>
+                <ul>
+                    <li>if statement</li>
+                    <li>if-else statement</li>
+                    <li>if-else-if ladder</li>
+                    <li>nested if statement</li>
+                </ul>
+                <h3>Java if Statement</h3>
+                <p>The Java if statement tests the condition. It executes the if block if condition is true.</p>
+                <h4>Syntax:</h4>
+                <div class="code-box">
+                    <pre>
+                        <code>
+                            if(condition){  
+                                //code to be executed  
+                                }            
+                        </code>
+                    </pre>
+                </div>
+                <div style="text-align: center; margin-top: 20px;">
+                    <img src="./if.png" alt="James Gosling" style="max-width: 200%; height: 200px; margin-bottom: 20px;">
+                </div>
+
+                <h4>Example:</h4>
+                <div class="code-box">
+                    <pre>
+                        <code>
+//Java Program to demonstate the use of if statement.  
+public class IfExample {  
+public static void main(String[] args) {  
+    //defining an 'age' variable  
+    int age=20;  
+    //checking the age  
+    if(age>18){  
+        System.out.print("Age is greater than 18");  
+    }  
+}  
+}             
+                        </code>
+                    </pre>
+                </div>
+                <h4>Output:</h4>
+                <div class="code-box">
+                    <pre>
+                        <code>
+                            Age is greater than 18          
+                        </code>
+                    </pre>
+                </div>
+
+                <h3>Java if-else Statement</h3>
+                <p>The Java if-else statement also tests the condition. It executes the if block if condition is true otherwise else block is executed.</p>
+                <h4>Syntax:</h4>
+                <div class="code-box">
+                    <pre>
+                        <code>
+                            if(condition){  
+                                //code if condition is true  
+                                }else{  
+                                //code if condition is false  
+                                }             
+                        </code>
+                    </pre>
+                </div>
+                <div style="text-align: center; margin-top: 20px;">
+                    <img src="./if-else.png" alt="James Gosling" style="max-width: 200%; height: 200px; margin-bottom: 20px;">
+                </div>
+                <h4>Example:</h4>
+                <div class="code-box">
+                    <pre>
+                        <code>
+//A Java Program to demonstrate the use of if-else statement.  
+//It is a program of odd and even number.  
+public class IfElseExample {  
+public static void main(String[] args) {  
+    //defining a variable  
+    int number=13;  
+    //Check if the number is divisible by 2 or not  
+    if(number%2==0){  
+        System.out.println("even number");  
+    }else{  
+        System.out.println("odd number");  
+    }  
+}  
+}               
+                        </code>
+                    </pre>
+                </div>
+                <h4>Output:</h4>
+                <div class="code-box">
+                    <pre>
+                        <code>
+                            odd number           
+                        </code>
+                    </pre>
+                </div>
+            </section>
+
+
+            <section id="switch">
+                <h2>Java Switch</h2>
+                <h3>Java Switch Statement</h3>
+                <p>The Java switch statement executes one statement from multiple conditions. It is like if-else-if ladder statement. The switch statement works with byte, short, int, long, enum types, String and some wrapper types like Byte, Short, Int, and Long. Since Java 7, you can use strings in the switch statement.</p>
+                <p>In other words, the switch statement tests the equality of a variable against multiple values.</p>
+                <p>Points to Remember</p>
+                <ul>
+                    <li>There can be one or N number of case values for a switch expression.</li>
+                    <li>The case value must be of switch expression type only. The case value must be literal or constant. It doesn't allow variables.</li>
+                    <li>The case values must be unique. In case of duplicate value, it renders compile-time error.</li>
+                    <li>The Java switch expression must be of byte, short, int, long (with its Wrapper type), enums and string.</li>
+                    <li>Each case statement can have a break statement which is optional. When control reaches to the break statement, it jumps the control after the switch expression. If a break statement is not found, it executes the next case.</li>
+                    <li>The case value can have a default label which is optional.</li>
+                </ul>
+                <h4>Syntax:</h4>
+                <div class="code-box">
+                    <pre>
+                        <code>
+                            switch(expression){    
+                                case value1:    
+                                 //code to be executed;    
+                                 break;  //optional  
+                                case value2:    
+                                 //code to be executed;    
+                                 break;  //optional  
+                                ......    
+                                    
+                                default:     
+                                  code to be executed if all cases are not matched;  
+                                }               
+                        </code>
+                    </pre>
+                </div>
+
+                <div style="text-align: center; margin-top: 20px;">
+                    <img src="./java-switch-flowchart.png" alt="James Gosling" style="max-width: 200%; height: 200px; margin-bottom: 20px;">
+                </div>
+
+                <h4>Example:</h4>
+                <h4>SwitchExample.java</h4>
+                <div class="code-box">
+                    <pre>
+                        <code>
+                            public class SwitchExample {  
+                                public static void main(String[] args) {  
+                                    //Declaring a variable for switch expression  
+                                    int number=20;  
+                                    //Switch expression  
+                                    switch(number){  
+                                    //Case statements  
+                                    case 10: System.out.println("10");  
+                                    break;  
+                                    case 20: System.out.println("20");  
+                                    break;  
+                                    case 30: System.out.println("30");  
+                                    break;  
+                                    //Default case statement  
+                                    default:System.out.println("Not in 10, 20 or 30");  
+                                    }  
+                                }  
+                                }             
+                        </code>
+                    </pre>
+                </div>
+                <h4>Output:</h4>
+                <div class="code-box">
+                    <pre>
+                        <code>
+                            20           
+                        </code>
+                    </pre>
+                </div>
+            </section>
+
+            
+            <section id="forloop">
+                <h2>Java For Loop</h2>
+                <h3>Loops in Java</h3>
+                <p>The Java for loop is used to iterate a part of the program several times. If the number of iteration is fixed, it is recommended to use for loop.</p>
+                <h4>There are three types of for loops in Java.</h4>
+                <div style="text-align: center; margin-top: 20px;">
+                    <img src="./java-loops.png" alt="James Gosling" style="max-width: 200%; height: 200px; margin-bottom: 20px;">
+                </div>
+                <ul>
+                    <li>Simple for Loop</li>
+                    <li>For-each or Enhanced for Loop</li>
+                    <li>Labeled for Loop</li>
+                </ul>
+                <h3>Java Simple for Loop</h3>
+                <p>A simple for loop is the same as C/C++. We can initialize the variable, check condition and increment/decrement value. It consists of four parts:</p>
+                <ol>
+                    <li><b>Initialization:</b>It is the initial condition which is executed once when the loop starts. Here, we can initialize the variable, or we can use an already initialized variable. It is an optional condition.</li>
+                    <li><b>Condition:</b>It is the second condition which is executed each time to test the condition of the loop. It continues execution until the condition is false. It must return boolean value either true or false. It is an optional condition.</li>
+                    <li><b>Increment/Decrement:</b>It increments or decrements the variable value. It is an optional condition.</li>
+                    <li><b>Statement:</b>The statement of the loop is executed each time until the second condition is false.</li>
+                </ol>
+                <h4>Syntax:</h4>
+                <div class="code-box">
+                    <pre>
+                        <code>
+                            for(initialization; condition; increment/decrement){    
+                                //statement or code to be executed    
+                                }             
+                        </code>
+                    </pre>
+                </div>
+                <h4>Flowchart:</h4>
+                <div style="text-align: center; margin-top: 20px;">
+                    <img src="./forloopflowchart.png" alt="James Gosling" style="max-width: 200%; height: 200px; margin-bottom: 20px;">
+                </div>
+                <h4>Example:</h4>
+                <h4>ForExample.java</h4>
+                <div class="code-box">
+                    <pre>
+                        <code>
+//Java Program to demonstrate the example of for loop  
+//which prints table of 1  
+public class ForExample {  
+public static void main(String[] args) {  
+    //Code of Java for loop  
+    for(int i=1;i<=10;i++){  
+        System.out.println(i);  
+    }  
+}  
+}             
+                        </code>
+                    </pre>
+                </div>
+                <h4>Output:</h4>
+                <div class="code-box">
+                    <pre>
+                        <code>
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10            
+                        </code>
+                    </pre>
+                </div>
+                <h3>Java Nested for Loop</h3>
+                <p>If we have a for loop inside the another loop, it is known as nested for loop. The inner loop executes completely whenever outer loop executes.</p>
+                <h4>Example:</h4>
+                <h4>NestedForExample.java</h4>
+                <div class="code-box">
+                    <pre>
+                        <code>
+                            public class NestedForExample {  
+                                public static void main(String[] args) {  
+                                //loop of i  
+                                for(int i=1;i<=3;i++){  
+                                //loop of j  
+                                for(int j=1;j<=3;j++){  
+                                        System.out.println(i+" "+j);  
+                                }//end of i  
+                                }//end of j  
+                                }  
+                                }             
+                        </code>
+                    </pre>
+                </div>
+
+                <h4>Output:</h4>
+                <div class="code-box">
+                    <pre>
+                        <code>
+                            1 1
+                            1 2
+                            1 3
+                            2 1
+                            2 2
+                            2 3
+                            3 1
+                            3 2
+                            3 3           
+                        </code>
+                    </pre>
+                </div>
+                <h3>Java for-each Loop</h3>
+                <p>The for-each loop is used to traverse array or collection in Java. It is easier to use than simple for loop because we don't need to increment value and use subscript notation.</p>
+                <p>It works on the basis of elements and not the index. It returns element one by one in the defined variable.</p>
+                <h4>Syntax:</h4>
+                <div class="code-box">
+                    <pre>
+                        <code>
+                            for(data_type variable : array_name){    
+                                //code to be executed    
+                                }               
+                        </code>
+                    </pre>
+                </div>
+                <h4>Example:</h4>
+                <h4>ForEachExample.java</h4>
+                <div class="code-box">
+                    <pre>
+                        <code>
+//Java For-each loop example which prints the  
+//elements of the array  
+public class ForEachExample {  
+public static void main(String[] args) {  
+    //Declaring an array  
+    int arr[]={12,23,44,56,78};  
+    //Printing array using for-each loop  
+    for(int i:arr){  
+        System.out.println(i);  
+    }  
+}  
+}             
+                        </code>
+                    </pre>
+                </div>
+                <h4>Output:</h4>
+                <div class="code-box">
+                    <pre>
+                        <code>
+12
+23
+44
+56
+78           
+                        </code>
+                    </pre>
+                </div>
+            </section>
+
+            <section id="whileloop">
+                <h2>Java While Loop</h2>
+                <h3>Java While Loop</h3>
+                <p>The Java while loop is used to iterate a part of the program repeatedly until the specified Boolean condition is true. As soon as the Boolean condition becomes false, the loop automatically stops.</p>
+                <p>The while loop is considered as a repeating if statement. If the number of iteration is not fixed, it is recommended to use the while loop.</p>
+                <h4>Syntax:</h4>
+                <div class="code-box">
+                    <pre>
+                        <code>
+                            while (condition){    
+                                //code to be executed   
+                                I ncrement / decrement statement  
+                                }                  
+                        </code>
+                    </pre>
+                </div>
+                <h4>The different parts of do-while loop:</h4>
+                <ol>
+                    <li>Condition: It is an expression which is tested. If the condition is true, the loop body is executed and control goes to update expression. When the condition becomes false, we exit the while loop.</li>
+                    <h4>Example:</h4>
+                    <p>i <=100</p>
+                    <li>Update expression: Every time the loop body is executed, this expression increments or decrements loop variable.</li>
+                </ol>
+                <h4>Example:</h4>
+                <p>i++;</p>
+                <h4>Flowchart of Java While Loop</h4>
+                <p>Here, the important thing about while loop is that, sometimes it may not even execute. If the condition to be tested results into false, the loop body is skipped and first statement after the while loop will be executed.</p>
+                <div style="text-align: center; margin-top: 20px;">
+                    <img src="./java-while-loopflowchart.png" alt="James Gosling" style="max-width: 200%; height: 200px; margin-bottom: 20px;">
+                </div>
+                <h4>Example:</h4>
+                <p>In the below example, we print integer values from 1 to 10. Unlike the for loop, we separately need to initialize and increment the variable used in the condition (here, i). Otherwise, the loop will execute infinitely.</p>
+                <h4>WhileExample.java</h4>
+                <div class="code-box">
+                    <pre>
+                        <code>
+                            public class WhileExample {  
+                                public static void main(String[] args) {  
+                                    int i=1;  
+                                    while(i<=10){  
+                                        System.out.println(i);  
+                                    i++;  
+                                    }  
+                                }  
+                                }                  
+                        </code>
+                    </pre>
+                </div>
+                <h4>Output:</h4>
+                <div class="code-box">
+                    <pre>
+                        <code>
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10                  
+                        </code>
+                    </pre>
+                </div>
+            </section>
+
+            <section id="dowhile">
+                <h2>Java Do While Loop</h2>
+                <h3>Java do While Loop</h3>
+                <p>The Java do-while loop is used to iterate a part of the program repeatedly, until the specified condition is true. If the number of iteration is not fixed and you must have to execute the loop at least once, it is recommended to use a do-while loop.</p>
+                <p>Java do-while loop is called an exit control loop. Therefore, unlike while loop and for loop, the do-while check the condition at the end of loop body. The Java do-while loop is executed at least once because condition is checked after loop body.</p>
+                <h4>Syntax:</h4>
+                <div class="code-box">
+                    <pre>
+                        <code>
+                            do{    
+                                //code to be executed / loop body  
+                                //update statement   
+                                }while (condition);                      
+                        </code>
+                    </pre>
+                </div>
+                <h4>The different parts of do-while loop:</h4>
+                <ol>
+                    <li>Condition: It is an expression which is tested. If the condition is true, the loop body is executed and control goes to update expression. As soon as the condition becomes false, loop breaks automatically.</li>
+                    <h4>Example:</h4>
+                    <p>i <=100</p>
+                    <li>Update expression: Every time the loop body is executed, the this expression increments or decrements loop variable.</li>
+                    <h4>Example:</h4>
+                    <p>i++;</p>
+                </ol>
+                <h4>Flowchart of do-while loop:</h4>
+                <div style="text-align: center; margin-top: 20px;">
+                    <img src="./java-do-while-loopflowchart.png" alt="James Gosling" style="max-width: 200%; height: 200px; margin-bottom: 20px;">
+                </div>
+                <h4>Example:</h4>
+                <p>In the below example, we print integer values from 1 to 10. Unlike the for loop, we separately need to initialize and increment the variable used in the condition (here, i). Otherwise, the loop will execute infinitely.</p>
+                <h4>DoWhileExample.java</h4>
+                <div class="code-box">
+                    <pre>
+                        <code>
+                            public class DoWhileExample {    
+                                public static void main(String[] args) {    
+                                    int i=1;    
+                                    do{    
+                                        System.out.println(i);    
+                                    i++;    
+                                    }while(i<=10);    
+                                }    
+                                }                          
+                        </code>
+                    </pre>
+                </div>
+                <h4>Output</h4>
+                <div class="code-box">
+                    <pre>
+                        <code>
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10                          
+                        </code>
+                    </pre>
+                </div>
+            </section>
+
+            <section id="break">
+                <h2>Java Break</h2>
+                <h3>Java Break Statement</h3>
+                <p>When a break statement is encountered inside a loop, the loop is immediately terminated and the program control resumes at the next statement following the loop.</p>
+                <p>The Java break statement is used to break loop or switch statement. It breaks the current flow of the program at specified condition. In case of inner loop, it breaks only inner loop.</p>
+                <p>We can use Java break statement in all types of loops such as for loop, while loop and do-while loop.</p>
+                <h4>Syntax:</h4>
+                <div class="code-box">
+                    <pre>
+                        <code>
+                            jump-statement;    
+                            break;                        
+                        </code>
+                    </pre>
+                </div>
+                <h4>Flowchart of Break Statement</h4>
+                <div style="text-align: center; margin-top: 20px;">
+                    <img src="./java-break-statement.png" alt="James Gosling" style="max-width: 200%; height: 200px; margin-bottom: 20px;">
+                </div>
+                <h3>Java Break Statement with Loop</h3>
+                <h4>Example:</h4>
+                <h4>BreakExample.java</h4>
+                <div class="code-box">
+                    <pre>
+                        <code>
+//Java Program to demonstrate the use of break statement    
+//inside the for loop.  
+public class BreakExample {  
+public static void main(String[] args) {  
+    //using for loop  
+    for(int i=1;i<=10;i++){  
+        if(i==5){  
+            //breaking the loop  
+            break;  
+        }  
+        System.out.println(i);  
+    }  
+}  
+}                          
+                        </code>
+                    </pre>
+                </div>
+                <h4>Output:</h4>
+                <div class="code-box">
+                    <pre>
+                        <code>
+1
+2
+3
+4                        
+                        </code>
+                    </pre>
+                </div>
+            </section>
+
+            <section id="continue">
+                <h2>Java Continue</h2>
+                <h3>Java Continue Statement</h3>
+                <p>The continue statement is used in loop control structure when you need to jump to the next iteration of the loop immediately. It can be used with for loop or while loop.</p>
+                <p>The Java continue statement is used to continue the loop. It continues the current flow of the program and skips the remaining code at the specified condition. In case of an inner loop, it continues the inner loop only.</p>
+                <p>We can use Java continue statement in all types of loops such as for loop, while loop and do-while loop.</p>
+                <h4>Syntax:</h4>
+                <div class="code-box">
+                    <pre>
+                        <code>
+                            jump-statement;    
+                            continue; 
+                        </code>
+                    </pre>
+                </div>
+                <h3>Java Continue Statement Example</h3>
+                <h4>ContinueExample.java</h4>
+                <div class="code-box">
+                    <pre>
+                        <code>
+//Java Program to demonstrate the use of continue statement  
+//inside the for loop.  
+public class ContinueExample {  
+public static void main(String[] args) {  
+    //for loop  
+    for(int i=1;i<=10;i++){  
+        if(i==5){  
+            //using continue statement  
+            continue;//it will skip the rest statement  
+        }  
+        System.out.println(i);  
+    }  
+}  
+}   
+                        </code>
+                    </pre>
+                </div>
+                <h4>Output:</h4>
+                <div class="code-box">
+                    <pre>
+                        <code>
+1
+2
+3
+4
+6
+7
+8
+9
+10 
+                        </code>
+                    </pre>
+                </div>
+                <p>As you can see in the above output, 5 is not printed on the console. It is because the loop is continued when it reaches to 5.</p>
+            </section>
+
+            <section id="comments">
+                <h2>Java Comments</h2>
+                <p>The Java comments are the statements in a program that are not executed by the compiler and interpreter.</p>
+                <h3>Why do we use comments in a code?</h3>
+                <ul>
+                    <li>Comments are used to make the program more readable by adding the details of the code.</li>
+                    <li>It makes easy to maintain the code and to find the errors easily.</li>
+                    <li>The comments can be used to provide information or explanation about the variable, method, class, or any statement.</li>
+                    <li>It can also be used to prevent the execution of program code while testing the alternative code.</li>
+                </ul>
+                <h3>Types of Java Comments</h3>
+                <h4>There are three types of comments in Java.</h4>
+                <ol>
+                    <li>Single Line Comment</li>
+                    <li>Multi Line Comment</li>
+                    <li>Documentation Comment</li>
+                </ol>
+                <div style="text-align: center; margin-top: 20px;">
+                    <img src="./comments.png" alt="James Gosling" style="max-width: 200%; height: 200px; margin-bottom: 20px;">
+                </div>
+
+                <ol>
+                    <li>Java Single Line Comment</li>
+                    <p>The single-line comment is used to comment only one line of the code. It is the widely used and easiest way of commenting the statements.</p>
+                    <p>Single line comments starts with two forward slashes (//). Any text in front of // is not executed by Java.</p>
+                    <h4>Syntax:</h4>
+                    <div class="code-box">
+                        <pre>
+                            <code>
+                                //This is single line comment   
+                            </code>
+                        </pre>
+                    </div>
+                    <li>Java Multi Line Comment</li>
+                    <p>The multi-line comment is used to comment multiple lines of code. It can be used to explain a complex code snippet or to comment multiple lines of code at a time (as it will be difficult to use single-line comments there).</p>
+                    <p>Multi-line comments are placed between /* and */. Any text between /* and */ is not executed by Java.</p>
+                    <h4>Syntax:</h4>
+                    <div class="code-box">
+                        <pre>
+                            <code>
+                                /*  
+                                This   
+                                is   
+                                multi line   
+                                comment  
+                                */     
+                            </code>
+                        </pre>
+                    </div>
+                    <li>Java Documentation Comment</li>
+                    <p>Documentation comments are usually used to write large programs for a project or software application as it helps to create documentation API. These APIs are needed for reference, i.e., which classes, methods, arguments, etc., are used in the code.</p>
+                    <p>To create documentation API, we need to use the javadoc tool. The documentation comments are placed between /** and */.</p>
+                    <h4>Syntax:</h4>
+                    <div class="code-box">
+                        <pre>
+                            <code>
+/**  
+* 
+*We can use various tags to depict the parameter 
+*or heading or author name 
+*We can also use HTML tags   
+* 
+*/     
+                            </code>
+                        </pre>
+                    </div>
+                </ol>
+            </section>
+
+
+            <section id="oops_concepts">
+                <h2>Java OOPs Concepts</h2>
+                <p>In this page, we will learn about the basics of OOPs. Object-Oriented Programming is a paradigm that provides many concepts, such as inheritance, data binding, polymorphism, etc.</p>
+                <p>Simula is considered the first object-oriented programming language. The programming paradigm where everything is represented as an object is known as a truly object-oriented programming language.</p>
+                <p>Smalltalk is considered the first truly object-oriented programming language.</p>
+                <p>The popular object-oriented languages are Java, C#, PHP, Python, C++, etc.</p>
+                <p>The main aim of object-oriented programming is to implement real-world entities, for example, object, classes, abstraction, inheritance, polymorphism, etc.</p>
+                <h3>OOPs (Object-Oriented Programming System)</h3>
+                <p>Object means a real-world entity such as a pen, chair, table, computer, watch, etc. Object-Oriented Programming is a methodology or paradigm to design a program using classes and objects. It simplifies software development and maintenance by providing some concepts:</p>
+                <ul>
+                    <li>Object</li>
+                    <li>Class</li>
+                    <li>Inheritance</li>
+                    <li>Polymorphism</li>
+                    <li>Abstraction</li>
+                    <li>Encapsulation</li>
+                </ul>
+                <p>Apart from these concepts, there are some other terms which are used in Object-Oriented design:</p>
+                <ul>
+                    <li>Coupling</li>
+                    <li>Cohesion</li>
+                    <li>Association</li>
+                    <li>Aggregation</li>
+                    <li>Composition</li>
+                </ul>
+                <div style="text-align: center; margin-top: 20px;">
+                    <img src="./java-oops.png" alt="James Gosling" style="max-width: 200%; height: 200px; margin-bottom: 20px;">
+                </div>
+                <h3>Object</h3>
+                <div class="container">
+                    <div class="content">
+                        <p>Any entity that has state and behavior is known as an object. For example, a chair, pen, table, keyboard, bike, etc. It can be physical or logical.</p>
+                        <p>An Object can be defined as an instance of a class. An object contains an address and takes up some space in memory. Objects can communicate without knowing the details of each other's data or code. The only necessary thing is the type of message accepted and the type of response returned by the objects.</p>
+                        <p><b>Example:</b>A dog is an object because it has states like color, name, breed, etc. as well as behaviors like wagging the tail, barking, eating, etc.</p>
+                    </div>
+                    <div class="image">
+                        <img src="./objects.png" alt="Image Description">
+                    </div>
+                </div>
+                <h3>Class</h3>
+                <p>Collection of objects is called class. It is a logical entity.</p>
+                <p>A class can also be defined as a blueprint from which you can create an individual object. Class doesn't consume any space.</p>
+
+                <h3>Inheritance</h3>
+                <p>When one object acquires all the properties and behaviors of a parent object, it is known as inheritance. It provides code reusability. It is used to achieve runtime polymorphism.</p>
+
+                <h3>Polymorphism</h3>
+                <p>If one task is performed in different ways, it is known as polymorphism. For example: to convince the customer differently, to draw something, for example, shape, triangle, rectangle, etc.</p>
+                <p>In Java, we use method overloading and method overriding to achieve polymorphism.</p>
+                <p>Another example can be to speak something; for example, a cat speaks meow, dog barks woof, etc.</p>
+
+                <h3>Abstraction</h3>
+                <p>Hiding internal details and showing functionality is known as abstraction. For example phone call, we don't know the internal processing.</p>
+                <p>In Java, we use abstract class and interface to achieve abstraction.</p>
+
+                <h3>Encapsulation</h3>
+                <p>Binding (or wrapping) code and data together into a single unit are known as encapsulation. For example, a capsule, it is wrapped with different medicines.</p>
+                <p>A java class is the example of encapsulation. Java bean is the fully encapsulated class because all the data members are private here.</p>
+            </section>
+
+            <section id="class_and_object">
+                <h2>Class and Object</h2>
+                <h3>Objects and Classes in Java</h3>
+                <p>In this page, we will learn about Java objects and classes. In object-oriented programming technique, we design a program using objects and classes.</p>
+                <p>An object in Java is the physical as well as a logical entity, whereas, a class in Java is a logical entity only.</p>
+                <h3>What is an object in Java</h3>
+                <p>An entity that has state and behavior is known as an object e.g., chair, bike, marker, pen, table, car, etc. It can be physical or logical (tangible and intangible). The example of an intangible object is the banking system.</p>
+                <h4>An object has three characteristics:</h4>
+                <p><b>State:</b> represents the data (value) of an object.</p>
+                <p><b>Behavior:</b>represents the behavior (functionality) of an object such as deposit, withdraw, etc.</p>
+                <p><b>Identity:</b>An object identity is typically implemented via a unique ID. The value of the ID is not visible to the external user. However, it is used internally by the JVM to identify each object uniquely.</p>
+                
+                <p>For Example, Pen is an object. Its name is Reynolds; color is white, known as its state. It is used to write, so writing is its behavior.</p>
+                <p><b>An object is an instance of a class.</b>A class is a template or blueprint from which objects are created. So, an object is the instance(result) of a class.</p>
+                <h4>Object Definitions:</h4>
+                <ul>
+                    <li>An object is a real-world entity.</li>
+                    <li>An object is a runtime entity.</li>
+                    <li>The object is an entity which has state and behavior.</li>
+                    <li>The object is an instance of a class.</li>
+                </ul>
+                <h3>What is a class in Java</h3>
+                <p>A class is a group of objects which have common properties. It is a template or blueprint from which objects are created. It is a logical entity. It can't be physical.</p>
+                <h4>A class in Java can contain:</h4>
+                <ul>
+                    <li>Fields</li>
+                    <li>Methods</li>
+                    <li>Constructors</li>
+                    <li>Blocks</li>
+                    <li>Nested class and interface</li>
+                </ul>
+                <h4>Syntax to declare a class:</h4>
+                <div class="code-box">
+                    <pre>
+                        <code>
+                            class <class_name>{  
+                                field;  
+                                method;  
+                            }      
+                        </code>
+                    </pre>
+                </div>
+                <h3>Instance variable in Java</h3>
+                <p>A variable which is created inside the class but outside the method is known as an instance variable. Instance variable doesn't get memory at compile time. It gets memory at runtime when an object or instance is created. That is why it is known as an instance variable.</p>
+                <h3>Method in Java</h3>
+                <p>In Java, a method is like a function which is used to expose the behavior of an object.</p>
+                <h3>Object and Class Example: main within the class</h3>
+                <p>In this example, we have created a Student class which has two data members id and name. We are creating the object of the Student class by new keyword and printing the object's value.</p>
+                <p>Here, we are creating a main() method inside the class.</p>
+                <div class="code-box">
+                    <pre>
+                        <code>
+//Java Program to illustrate how to define a class and fields  
+//Defining a Student class.  
+class Student{  
+ //defining fields  
+ int id;//field or data member or instance variable  
+ String name;  
+ //creating main method inside the Student class  
+ public static void main(String args[]){  
+  //Creating an object or instance  
+  Student s1=new Student();//creating an object of Student  
+  //Printing values of the object  
+  System.out.println(s1.id);//accessing member through reference variable  
+  System.out.println(s1.name);  
+ }  
+}    
+                        </code>
+                    </pre>
+                </div>
+                <h4>Output:</h4>
+                <div class="code-box">
+                    <pre>
+                        <code>
+0 
+null   
+                        </code>
+                    </pre>
+                </div>
+            </section>
+
+            <section id="methods">
+                <h2>Methods in Java</h2>
+                <h3>Method in Java</h3>
+                <p>In general, a method is a way to perform some task. Similarly, the method in Java is a collection of instructions that performs a specific task. It provides the reusability of code. We can also easily modify code using methods. In this section, we will learn what is a method in Java, types of methods, method declaration, and how to call a method in Java.</p>
+                <h3>What is a method in Java?</h3>
+                <p>A method is a block of code or collection of statements or a set of code grouped together to perform a certain task or operation. It is used to achieve the reusability of code. We write a method once and use it many times. We do not require to write code again and again. It also provides the easy modification and readability of code, just by adding or removing a chunk of code. The method is executed only when we call or invoke it.</p>
+                <h3>Method Declaration</h3>
+                <p>The method declaration provides information about method attributes, such as visibility, return-type, name, and arguments. It has six components that are known as method header, as we have shown in the following figure.</p>
+                <div class="image">
+                    <img src="./method-in-java.png" alt="Image Description">
+                </div><br><br><br><br><br><br><br>
+                <h4>Let's see an example of the predefined method.</h4>
+                <h4>Demo.java</h4>
+                <div class="code-box">
+                    <pre>
+                        <code>
+                            public class Demo   
+                            {  
+                            public static void main(String[] args)   
+                            {  
+                            // using the max() method of Math class  
+                            System.out.print("The maximum number is: " + Math.max(9,7));  
+                            }  
+                            }  
+                        </code>
+                    </pre>
+                </div>
+                <h4>Output:</h4>
+                <div class="code-box">
+                    <pre>
+                        <code>
+                            The maximum number is: 9
+                        </code>
+                    </pre>
+                </div>
+                <p>In the above example, we have used three predefined methods main(), print(), and max(). We have used these methods directly without declaration because they are predefined. The print() method is a method of PrintStream class that prints the result on the console. The max() method is a method of the Math class that returns the greater of two numbers.</p>
+
+            </section>
+
+            <section id="constructor">
+                <h2>Constructor</h2>
+                <h3>Constructors in Java</h3>
+                <p>In Java, a constructor is a block of codes similar to the method. It is called when an instance of the class is created. At the time of calling constructor, memory for the object is allocated in the memory.</p>
+                <p>It is a special type of method which is used to initialize the object.</p>
+                <p>Every time an object is created using the new() keyword, at least one constructor is called.</p>
+                <p>It calls a default constructor if there is no constructor available in the class. In such case, Java compiler provides a default constructor by default.</p>
+                <p>There are two types of constructors in Java: no-arg constructor, and parameterized constructor.</p>
+                <p><b>Note: </b>It is called constructor because it constructs the values at the time of object creation. It is not necessary to write a constructor for a class. It is because java compiler creates a default constructor if your class doesn't have any.</p>
+                <h3>Rules for creating Java constructor</h3>
+                <h4>There are two rules defined for the constructor.</h4>
+                <ol>
+                    <li>Constructor name must be the same as its class name</li>
+                    <li>A Constructor must have no explicit return type</li>
+                    <li>A Java constructor cannot be abstract, static, final, and synchronized</li>
+
+                </ol>
+                <h3>Types of Java constructors</h3>
+                <h4>There are two types of constructors in Java:</h4>
+                <ol>
+                    <li>Default constructor (no-arg constructor)</li>
+                    <li>Parameterized constructor</li>
+                </ol>
+               
+                <h3>Java Default Constructor</h3>
+                <p>A constructor is called "Default Constructor" when it doesn't have any parameter.</p>
+                <h4>Syntax of default constructor:</h4>
+                <div class="code-box">
+                    <pre>
+                        <code>
+                            class_name(){} 
+                        </code>
+                    </pre>
+                </div>
+                <h3>Example of default constructor</h3>
+                <p>In this example, we are creating the no-arg constructor in the Bike class. It will be invoked at the time of object creation.</p>
+                <div class="code-box">
+                    <pre>
+                        <code>
+//Java Program to create and call a default constructor  
+class Bike1{  
+//creating a default constructor  
+Bike1(){System.out.println("Bike is created");}  
+//main method  
+public static void main(String args[]){  
+//calling a default constructor  
+Bike1 b=new Bike1();  
+}  
+}  
+                        </code>
+                    </pre>
+                </div>
+                <h4>Output:</h4>
+                <div class="code-box">
+                    <pre>
+                        <code>
+                            Bike is created 
+                        </code>
+                    </pre>
+                </div>
+                <h3>Java Parameterized Constructor</h3>
+                <p>A constructor which has a specific number of parameters is called a parameterized constructor.</p>
+                <h4>Why use the parameterized constructor?</h4>
+                <p>The parameterized constructor is used to provide different values to distinct objects. However, you can provide the same values also.</p>
+                <h3>Example of parameterized constructor</h3>
+                <p>In this example, we have created the constructor of Student class that have two parameters. We can have any number of parameters in the constructor.</p>
+                <div class="code-box">
+                    <pre>
+                        <code>
+//Java Program to demonstrate the use of the parameterized constructor.  
+class Student4{  
+    int id;  
+    String name;  
+    //creating a parameterized constructor  
+    Student4(int i,String n){  
+    id = i;  
+    name = n;  
+    }  
+    //method to display the values  
+    void display(){System.out.println(id+" "+name);}  
+   
+    public static void main(String args[]){  
+    //creating objects and passing values  
+    Student4 s1 = new Student4(111,"Karan");  
+    Student4 s2 = new Student4(222,"Aryan");  
+    //calling method to display the values of object  
+    s1.display();  
+    s2.display();  
+   }  
+}   
+                        </code>
+                    </pre>
+                </div>
+                <h4>Output:</h4>
+                <div class="code-box">
+                    <pre>
+                        <code>
+111 Karan
+222 Aryan 
+                        </code>
+                    </pre>
+                </div>
+                <h3>Constructor Overloading in Java</h3>
+                <p>In Java, a constructor is just like a method but without return type. It can also be overloaded like Java methods.</p>
+                <p>Constructor overloading in Java is a technique of having more than one constructor with different parameter lists. They are arranged in a way that each constructor performs a different task. They are differentiated by the compiler by the number of parameters in the list and their types.</p>
+                <h3>Example of Constructor Overloading</h3>
+                <div class="code-box">
+                    <pre>
+                        <code>
+                            //Java program to overload constructors  
+                            class Student5{  
+                                int id;  
+                                String name;  
+                                int age;  
+                                //creating two arg constructor  
+                                Student5(int i,String n){  
+                                id = i;  
+                                name = n;  
+                                }  
+                                //creating three arg constructor  
+                                Student5(int i,String n,int a){  
+                                id = i;  
+                                name = n;  
+                                age=a;  
+                                }  
+                                void display(){System.out.println(id+" "+name+" "+age);}  
+                               
+                                public static void main(String args[]){  
+                                Student5 s1 = new Student5(111,"Karan");  
+                                Student5 s2 = new Student5(222,"Aryan",25);  
+                                s1.display();  
+                                s2.display();  
+                               }  
+                            }  
+                        </code>
+                    </pre>
+                </div>
+                <h4>Output:</h4>
+                <div class="code-box">
+                    <pre>
+                        <code>
+                            111 Karan 0
+                            222 Aryan 25
+                        </code>
+                    </pre>
+                </div>
+            </section>
+
+            <section id="refer">
+                <h2>Reference</h2>
+                <p>Below are the links that you can use for the same course as a reference for more information.</p>
+                <a href="https://www.javatpoint.com/java-tutorial">Javatpoint Java Tutorial</a><br>
+                <a href="https://www.geeksforgeeks.org/java/">GeeksforGeeks Java Tutorial</a>
+            
+            </section>
+
+
+
+                
+
+
+
+
+
+
+            
+
+
+
+
+
+        
+
+
+
+
+
+            <!-- Add more sections as needed -->
+        </div>
+    </div>
+</body>
+</html>

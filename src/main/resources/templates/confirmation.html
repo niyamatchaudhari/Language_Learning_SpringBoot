@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Confirmation</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+        }
+        .header {
+            background-color: #007bff;
+            padding: 20px;
+            color: #fff;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+        }
+        .nav {
+            display: flex;
+            align-items: center;
+        }
+        .nav img {
+            max-height: 40px; /* Set the maximum height of your logo */
+            width: auto; /* To maintain aspect ratio */
+            margin-right: 20px; /* Adjust margin as needed */
+            flex-shrink: 0; /* Prevent the logo from shrinking */
+        }
+        .nav a {
+            text-decoration: none;
+            color: #fff;
+            margin-left: 20px;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 50px;
+        }
+        .confirmation {
+            background-color: #fff;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: 400px;
+            text-align: center;
+            margin-top: 20px;
+        }
+        .confirmation h2 {
+            color: #007bff;
+        }
+        .confirmation p {
+            margin-bottom: 20px;
+        }
+        .confirmation-btn {
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            text-decoration: none;
+        }
+        .confirmation-btn:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div class="logo">Language Learning App</div>
+        <div class="nav">
+            <img src="./logo.png" alt="Logo">
+        </div>
+    </div>
+    <div class="container">
+        <div class="confirmation">
+            <h2>Registration Successful!</h2>
+            <p>Your registration has been confirmed.</p>
+            <p>Thank you for registering with us.</p>
+            <a href="/courses" class="confirmation-btn">GO TO COURSES</a>
+        </div>
+    </div>
+</body>
+</html>
